@@ -19,4 +19,54 @@ $stroka="Таким образом укрепление и развитие ст
 $wdth=20;
 $break="<br>\n";
 echo wordwrap($stroka,$wdth,$break);
+echo "</br>";
+echo "</br>";
+$arr = array(
+    "two" => "2",
+    "three" => "3",
+    "one" => "1",
+);
+print_r($arr);
+echo "</br>";
+asort($arr);
+print_r($arr);
+echo "</br>";
+arsort($arr);
+print_r($arr);
+echo "</br>";
+ksort($arr);
+print_r($arr);
+echo "</br>";
+krsort($arr);
+print_r($arr);
+echo "</br>";
+$array = array(
+    "hop" => "15",
+    "hey" => "10",
+    "lalaley" => "5",
+);
+$bool=true;
+print_r(array_reverse($array,$bool));
+echo "</br>";
+sort($array);
+print_r($array);
+echo "</br>";
+rsort($array);
+print_r($array);
+echo "</br>";
+shuffle($array);
+print_r($array);
+echo "</br>";
+$mas = array(
+    "velial" => "666",
+    "lucifer" => "999",
+    "baal" => "696",
+);
+print_r(array_flip($mas));
+echo "</br>";
+print_r(array_keys($mas));
+echo "</br>";
+print_r(array_values($mas));
+echo "</br>";
+print_r(array_merge($mas,$arr,$array));
 ?>
